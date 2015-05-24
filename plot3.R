@@ -20,7 +20,7 @@ baltimorePlot <- ggplot(baltimore, aes(factor(year), Emissions, fill=type)) +
   theme_bw() + 
   guides(fill=FALSE) +
   facet_grid(.~type, scales = "free", space="free") + 
-  labs(x="year", y=expression("Total PM"[2.5]*" Emission (Tons)")) + 
+  labs(x="year", y=expression("Total PM"[2.5]*" Emission (tons)")) + 
   labs(title=expression("PM"[2.5]*" Emissions, Baltimore City 1999-2008 by Source Type"))
 
 print(baltimorePlot)
